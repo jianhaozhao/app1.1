@@ -7,7 +7,15 @@ Page({
     userInfo: {},
     logged: false,
     takeSession: false,
-    requestResult: ''
+    requestResult: '',
+    sort:{
+      'books': {'name':'小说','url': '../img/books.png'},
+      'video': { 'name': '影评', 'url': '../img/video.png' },
+      'music': { 'name': '音乐', 'url': '../img/music.png'},
+      'xiao': { 'name': '笑话', 'url': '../img/music.png'},
+      'ming': { 'name': '明星', 'url': '../img/video.png'},
+      'jishu': { 'name': '技术', 'url': '../img/books.png'}
+    }
   },
 
   onLoad: function() {
