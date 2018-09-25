@@ -1,6 +1,8 @@
 <!--index.wxml-->
+<view class='top'></view>
+
 <view class="container">
- <view class='main'>
+  <view class='main'>
     <view wx:for="{{sort}}" wx:key='*this' >
       <view class='btn' data-value='{{index}}' catch:tap='bindViewTap'>
         <view class='btn-icon'>
@@ -9,23 +11,5 @@
         <text>{{item.name}}</text>
       </view>
     </view>
-
-    <!-- <view class='btn' data-value='video' catch:tap='bindViewTap'>
-      <view class='btn-icon'>
-        <image src='../img/video.png'></image>
-      </view>
-      <text>电影</text>
-    </view> -->
-
   </view>
-  <!-- 上传图片
-  <view class="uploader">
-    <view class="uploader-text" bindtap="doUpload">
-      <text>上传图片</text>
-    </view>
-    <view class="uploader-container" wx:if="{{imgUrl}}">
-      <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
-    </view>
-  </view> -->
-
 </view>
