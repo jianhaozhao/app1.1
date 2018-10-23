@@ -25,6 +25,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function () {
+    
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -52,6 +53,7 @@ Page({
         }
       })
     }
+    
   },
   getUserInfo: function (e) {
     console.log(e)
@@ -60,6 +62,9 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  active:function(){
+
   },
 
   /**

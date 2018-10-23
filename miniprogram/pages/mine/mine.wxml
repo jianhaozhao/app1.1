@@ -1,18 +1,18 @@
 <!--miniprogram/pages/mine/mine.wxml-->
 <!-- 用户信息 -->
 
-
-<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-<block wx:else>
-  <view class='top'>
-    <image bindtap="bindViewTap" data-value='logs' class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+<view class='top'>
+  <view></view>
+  <view class='userimage'>
+    <open-data type="userAvatarUrl"></open-data>
   </view>
-  <view class='center'></view>
-  <view class='center'></view>
-  <view class='center'></view>
-  <view class='center'></view>
-</block>
-
+  <view class='username'>
+    <open-data type="userNickName"></open-data>
+  </view>
+</view>
+<view class='center'></view>
+<view class='center'></view>
+<view class='center'></view>
+<view class='center'></view>
 
 
