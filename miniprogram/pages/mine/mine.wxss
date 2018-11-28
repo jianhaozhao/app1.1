@@ -10,14 +10,15 @@ page {
   height: 120rpx;
   background-color: #fff;
   margin-top: 20rpx;
-  margin-bottom: 20rpx;
+  margin-bottom: 50rpx;
 }
 
 .center{
   width: 100%;
   height: 90rpx;
   background-color: #fff;
-  margin-top: 5rpx;
+  /* margin-top: 10rpx; */
+  border-bottom: 1rpx #f6f6f6 solid;
 }
 
 .userimage{
@@ -33,12 +34,31 @@ page {
 .username{
   display: block;
   overflow:hidden;
-  width: 36rpx;
+  width: 70%;
   height: 45rpx;
   margin-top: 35rpx;
   margin-left: 30rpx;
   font-size: 30rpx;
   float: left;
 }
-
-
+.fen_image{
+  width: 50rpx;
+  height: 50rpx;
+  float:left;
+}
+.image_png{
+  margin-top: 20rpx;
+  margin-left: 12rpx;
+  width: 50rpx;
+  height: 50rpx;
+  opacity: 0.6;
+  /* border: 2rpx red solid; */
+  
+}
+.fen_text{
+  padding-left: 40rpx;
+  /* border: 1rpx red solid; */
+  float:left;
+  /* margin: 0 auto; */
+  line-height:90rpx;
+}

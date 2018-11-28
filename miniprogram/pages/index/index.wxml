@@ -5,7 +5,10 @@
   <view class='main'>
     <view wx:for="{{sort}}" wx:key='*this' >
       <view class='btn' data-value='{{index}}' catch:tap='bindViewTap'>
-        <view class='btn-icon'>
+        <view class='btn-icon' style='opacity:0.65' wx:if="{{index != 'books'}}">
+          <image src='{{item.url}}'></image>
+        </view>
+        <view class='btn-icon' style='opacity:1' wx:else>
           <image src='{{item.url}}'></image>
         </view>
         <text>{{item.name}}</text>

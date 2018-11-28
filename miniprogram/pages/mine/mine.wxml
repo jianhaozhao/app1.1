@@ -10,9 +10,20 @@
     <open-data type="userNickName"></open-data>
   </view>
 </view>
-<view class='center'></view>
-<view class='center'></view>
-<view class='center'></view>
-<view class='center'></view>
+<!-- 分割线 -->
+<block wx:for="{{classify}}" wx:key='*this'>
+  <view wx:if="{{index == 'accredit' || index == 'reward'}}" class='center' data-value='{{index}}' catch:tap='bindViewTap' style='margin-top:15rpx;'>
+    <view class="fen_image"><image class='image_png' src='{{item.url}}'></image></view>
+    <view class="fen_text">{{item.name}}</view>
+  </view>
+
+  <view wx:else class='center' data-value='{{index}}' catch:tap='bindViewTap'>
+    <view class="fen_image"><image class='image_png' src='{{item.url}}'></image></view>
+    <view class="fen_text">{{item.name}}</view>
+  </view>
+</block>
+<!-- <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权登录</button> -->
+
+
 
 

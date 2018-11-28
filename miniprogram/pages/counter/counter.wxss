@@ -1,0 +1,4 @@
+/* miniprogram/pages/counter/counter.wxss */
+view{
+  word-break: break-all;
+}

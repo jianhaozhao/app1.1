@@ -11,17 +11,17 @@ Page({
     sort:{
       'books': {'name':'小说','url': '../img/books.png'},
       'video': { 'name': '影评', 'url': '../img/video.png' },
-      'music': { 'name': '音乐', 'url': '../img/music.png'},
-      'xiao': { 'name': '笑话', 'url': '../img/music.png'},
-      'ming': { 'name': '明星', 'url': '../img/video.png'},
-      'jishu': { 'name': '年龄计算', 'url': '../img/books.png'}
+      'counter': { 'name': '年龄计算', 'url': '../img/counter.png' },
+      // 'music': { 'name': '音乐', 'url': '../img/music.png'},
+      // 'xiao': { 'name': '笑话', 'url': '../img/music.png'},
+      // 'ming': { 'name': '明星', 'url': '../img/video.png'}
     }
   },
   //事件处理函数
   bindViewTap: function (event) {
     var url = '../' + event.currentTarget.dataset.value + '/' + event.currentTarget.dataset.value
     wx.navigateTo({
-      url: url
+      url: url,
     })
   },
   onLoad: function() {
